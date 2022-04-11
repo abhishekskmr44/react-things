@@ -8,13 +8,10 @@ import Counter from "./Usestate&Props/Counter"
 // import {Todo} from './Todoapp/Todo'
 
 function App() {
-  // const [intialCount, setInitialCount] = useState(21);
+  const [intialCount, setInitialCount] = useState(21);
 
   return (
     <div className="App">
-
-    const [intialCount, setInitialCount] = useState(21);
-
       <h1>Masai School</h1>
       {/* <List/> */}
       {/* <Input/> */}
