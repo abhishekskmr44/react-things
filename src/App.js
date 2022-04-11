@@ -5,13 +5,15 @@ import './App.css'
 // import EmployeeDetails from './day1/EmployeeDetails'
 import Counter from "./Usestate&Props/Counter"
 // import { useState } from 'react';
-import {Todo} from './Todoapp/Todo'
+// import {Todo} from './Todoapp/Todo'
 
 function App() {
   // const [intialCount, setInitialCount] = useState(21);
 
   return (
     <div className="App">
+
+    const [intialCount, setInitialCount] = useState(21);
 
       <h1>Masai School</h1>
       {/* <List/> */}
