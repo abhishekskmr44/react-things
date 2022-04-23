@@ -6,14 +6,6 @@ function Counter({intialCount}) {
 
     const [count, setCount] = useState(intialCount);
 
-    // console.log(count);
-    // if(count%2 == 1){
-    //     <h1 style = {{backgroundColor:"red"}}>{count}</h1>
-    // }
-    // else{
-
-    // }
-
     let Increment = () =>{
         setCount(count+1)
     }

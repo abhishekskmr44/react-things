@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from "react";
 
 const Todo = () => {
 
@@ -22,7 +23,7 @@ const Todo = () => {
     return(
         <>
         <h1>Todo App</h1> 
-        <input type={"text"} value={task} placeholder="Add any task" onChange={newTask}></input>
+        <input type={"text"} value={mytask} placeholder="Add any task" onChange={newTask}></input>
         <button onClick={addTask}>Add Task</button>
         </>
     )
