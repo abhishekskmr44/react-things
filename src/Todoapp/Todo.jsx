@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 
-const Todo = () => {
+export const Todo = () => {
 
     // to "" as a intial input tag and then add task
     let [mytask, setMyTask] = useState("");
@@ -29,4 +29,3 @@ const Todo = () => {
     )
 }
 
-export default Todo;

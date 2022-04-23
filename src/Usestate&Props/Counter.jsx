@@ -17,6 +17,14 @@ function Counter({intialCount}) {
     let Double = () =>{
         setCount(count*2);
     }
+
+    if(count%2 !== 0){
+       console.log("odd") 
+    }
+    else{
+        console.log("even")
+    }
+
     // () => Decrement() === Decrement
     // (e) => Decrement(e) !== Decrement
 
