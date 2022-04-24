@@ -20,9 +20,11 @@ function App() {
     <div className="App">
       <h1>Masai School</h1>
 
-      <Counter intialCount={intialCount} />
-      <Todo/>
-      <Todoapp />
+      
+
+      {/* <Counter intialCount={intialCount} /> */}
+      {/* <Todo/> */}
+      {/* <Todoapp /> */}
       {/* <List/> */}
       {/* <Input/> */}
       {/* <EmployeeDetails /> */}
