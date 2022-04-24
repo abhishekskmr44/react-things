@@ -15,7 +15,7 @@ function App() {
       <h1>Masai School</h1>
 
       <Counter intialCount={intialCount} />
-      {/* <Todo/> */}
+      <Todo/>
 
       {/* <List/> */}
       {/* <Input/> */}

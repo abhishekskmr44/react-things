@@ -22,9 +22,13 @@ export const Todo = () => {
 
     return(
         <>
-        <h1>Todo App</h1> 
+        <h1>{mytask}</h1> 
         <input type={"text"} value={mytask} placeholder="Add any task" onChange={newTask}></input>
-        <button onClick={addTask}>Add Task</button>
+        <button onClick={() => addTask()}>Add Task</button>
+
+        {addtodo.map((el) =>{
+            return <h1>{el}</h1>
+        })}
         </>
     )
 }
