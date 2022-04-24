@@ -3,9 +3,15 @@ import './App.css'
 // import List from './day1/List';
 // import Input from './day1/Input';
 // import EmployeeDetails from './day1/EmployeeDetails'
-import Counter from "./Usestate&Props/Counter"
 import { useState } from 'react';
+
+// todos
 import {Todo} from './Todoapp/Todo'
+import {Todoapp} from './Todoapp/Todoapp'
+// counter
+import Counter from "./Usestate&Props/Counter"
+// useffect-1 todo -Pagination
+
 
 function App() {
   const [intialCount, setInitialCount] = useState(20);
@@ -16,7 +22,7 @@ function App() {
 
       <Counter intialCount={intialCount} />
       <Todo/>
-
+      <Todoapp />
       {/* <List/> */}
       {/* <Input/> */}
       {/* <EmployeeDetails /> */}
