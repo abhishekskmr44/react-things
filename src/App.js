@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css'
 // import List from './day1/List';
 // import Input from './day1/Input';
@@ -8,9 +7,17 @@ import { useState } from 'react';
 // todos
 import {Todo} from './Todoapp/Todo'
 import {Todoapp} from './Todoapp/Todoapp'
+
 // counter
 import Counter from "./Usestate&Props/Counter"
+
 // useffect-1 todo -Pagination
+import {Todos} from "./Useeffect - 1/Todos"
+
+let todos = [
+  { id:1, value:"react", completed:true}
+]
+
 
 
 function App() {
@@ -20,7 +27,7 @@ function App() {
     <div className="App">
       <h1>Masai School</h1>
 
-      
+      <Todos todos={todos}/>
 
       {/* <Counter intialCount={intialCount} /> */}
       {/* <Todo/> */}
