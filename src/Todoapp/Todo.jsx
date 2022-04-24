@@ -16,7 +16,7 @@ export const Todo = () => {
     }
 
     const addTask = () =>{
-        setAddTodo([...mytask,addtodo]);
+        setAddTodo([...addtodo,mytask]);
     }
 
 

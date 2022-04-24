@@ -25,7 +25,7 @@ function Counter({intialCount}) {
         console.log("even")
     }
 
-    // () => Decrement() === Decrement
+    // () => Decrement()     === Decrement
     // (e) => Decrement(e) !== Decrement
 
     return (
