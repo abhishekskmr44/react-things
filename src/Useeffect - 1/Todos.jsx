@@ -1,18 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AddTodo } from './AddTodo'
 import { Todo } from './Todo'
 
-export const Todos = ({todos}) => {
+export const Todos = () => {
+
+    const [todos, setTodos] = useState([]);
+
+    const onAdd = (newTodo) =>{
+        console.log(newTodo)
+
+        setTodos([
+            ...todos,
+            {
+                id:todos.length+1,
+                value:newTodo,
+                complete:false
+            }
+        ])
+    }
 
   return (
     <div>
-        <h1>Todos</h1>
+        <h1>Todos App</h1>
 
-        {Todos.map((todo => 
-        <Todo todo={Todos} />
+        <AddTodo onAdd={onAdd} />
+
+        {todos.map((todo) => (
+        <Todo key={todo.id} todo={todo} />
         ))}
-        
-        <AddTodo />
+
     </div>
   )
 }

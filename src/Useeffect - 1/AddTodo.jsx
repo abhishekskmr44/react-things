@@ -1,7 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-export const AddTodo = () => {
+
+export const AddTodo = ({onAdd}) => {
+
+    // const [onAdd, setonAdd] = useState("")
+
+    const [newTodo, setNewTodo] = useState("")
+
   return (
-    <div>AddTodo</div>
+    <div  style = {{border: '2px solid teal', margin: '10px'}}>
+
+        Add The Task 
+        
+        <input type="text" value={newTodo} onChange={ (e) => setNewTodo(e.target.value)}></input>
+        <button onClick={() => onAdd(newTodo)}>Add task</button>
+
+    </div>
   )
 }
