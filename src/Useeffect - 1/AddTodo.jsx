@@ -3,8 +3,6 @@ import React, { useState } from 'react'
 
 export const AddTodo = ({onAdd}) => {
 
-    // const [onAdd, setonAdd] = useState("")
-
     const [newTodo, setNewTodo] = useState("")
 
   return (
@@ -13,7 +11,8 @@ export const AddTodo = ({onAdd}) => {
         Add The Task 
         
         <input type="text" value={newTodo} onChange={ (e) => setNewTodo(e.target.value)}></input>
-        <button onClick={() => onAdd(newTodo)}>Add task</button>
+
+        <button onClick={() => onAdd(newTodo)}> Save </button>
 
     </div>
   )
