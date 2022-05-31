@@ -28,7 +28,7 @@ function App() {
     <div className="App">
       {/* <h1>Masai School</h1> */}
 
-      <Todos />
+      {/* <Todos /> */}
 
       {/* <Counter intialCount={intialCount} /> */}
       {/* <Todo/> */}
